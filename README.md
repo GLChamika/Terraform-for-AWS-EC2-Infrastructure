@@ -16,9 +16,11 @@ This project demonstrates basic Infrastructure as Code (IaC) using **Terraform**
 ## 📁 Project Structure
 ```
 terraform-aws-ec2/
-├── main.tf         # Main infrastructure definitions
-├── variables.tf    # Input variables
-├── outputs.tf      # Output values
+├── main.tf             # Main infrastructure definitions
+├── variables.tf        # Input variables
+├── outputs.tf          # Output values
+├── provider.tf         # Sets provider-specific settings
+├── terraform.tfvars    # Provides values for variables.tf
 ```
 
 ---
