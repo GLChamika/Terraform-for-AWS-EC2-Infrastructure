@@ -48,12 +48,17 @@ Provide AWS EC2 key pair name either in a `.tfvars` file or directly when applyi
 echo 'key_pair = "key-pair-name"' > terraform.tfvars
 ```
 
-### 4. Apply the Configuration
+### 4. Review the Execution Plan
+```bash
+terraform plan -var-file="terraform.tfvars"
+```
+
+### 5. Apply the Configuration
 ```bash
 terraform apply -var-file="terraform.tfvars"
 ```
 
-### 5. Output
+### 6. Output
 After provisioning, the EC2 public IP will be shown in the output.
 
 ---
